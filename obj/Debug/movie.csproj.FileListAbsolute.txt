@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\movie\bin\Debug\movie.exe.config
+C:\Users\User\Desktop\movie\bin\Debug\movie.exe
+C:\Users\User\Desktop\movie\bin\Debug\movie.pdb
+C:\Users\User\Desktop\movie\obj\Debug\movie.csprojAssemblyReference.cache
+C:\Users\User\Desktop\movie\obj\Debug\movie.Form1.resources
+C:\Users\User\Desktop\movie\obj\Debug\movie.Properties.Resources.resources
+C:\Users\User\Desktop\movie\obj\Debug\movie.csproj.GenerateResource.cache
+C:\Users\User\Desktop\movie\obj\Debug\movie.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\movie\obj\Debug\movie.exe
+C:\Users\User\Desktop\movie\obj\Debug\movie.pdb
+C:\Users\User\Desktop\movie\obj\Debug\movie.PL.frmActor.resources
+C:\Users\User\Desktop\movie\obj\Debug\movie.PL.frmSearch.resources
+C:\Users\User\Desktop\movie\obj\Debug\movie.PL.frmMovie.resources
