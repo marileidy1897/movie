@@ -19,7 +19,22 @@ namespace movie.DAL
 
         public bool ADD(actorBLL oactorBLL)
         {
-            return conexion.Command("INSERT INTO actorTable (name) VALUES ('"+ oactorBLL.Name+ "');");
+            return conexion.Command("INSERT INTO actorTable (name ,img ) VALUES ('"+ oactorBLL.Name+","+ oactorBLL.Img + "');");
+        }
+
+        public DataSet ShowActor()
+        {
+            SqlCommand query = new SqlCommand("Select * from actorTable");
+            return conexion.CommandQuery(query);
+
+        }
+        public bool Delete(actorBLL oactorBLL)
+        {
+            return conexion.Command("Delete from actorTable where id='" + oactorBLL.ID+"');");
+        }
+        public bool Edit(actorBLL oactorBLL)
+        {
+            return conexion.Command("Delete from actorTable where id='" + oactorBLL.ID + "');");
         }
 
     }

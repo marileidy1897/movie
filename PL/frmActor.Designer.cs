@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmActor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textGender = new System.Windows.Forms.TextBox();
+            this.imgBox = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btn_add);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.textGender);
+            this.panel1.Controls.Add(this.imgBox);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textName);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(709, 387);
@@ -70,15 +71,15 @@
             this.button3.Text = "Editar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_add
             // 
-            this.button2.Location = new System.Drawing.Point(61, 321);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 34);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Agregar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_add.Location = new System.Drawing.Point(61, 321);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(93, 34);
+            this.btn_add.TabIndex = 9;
+            this.btn_add.Text = "Agregar";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // button1
             // 
@@ -90,20 +91,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // textGender
             // 
-            this.textBox2.Location = new System.Drawing.Point(61, 237);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(348, 22);
-            this.textBox2.TabIndex = 7;
+            this.textGender.Location = new System.Drawing.Point(61, 237);
+            this.textGender.Name = "textGender";
+            this.textGender.Size = new System.Drawing.Size(348, 22);
+            this.textGender.TabIndex = 7;
             // 
-            // pictureBox1
+            // imgBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(457, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(177, 173);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.imgBox.Image = global::movie.Properties.Resources.Untitled;
+            this.imgBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("imgBox.InitialImage")));
+            this.imgBox.Location = new System.Drawing.Point(457, 56);
+            this.imgBox.Name = "imgBox";
+            this.imgBox.Size = new System.Drawing.Size(177, 173);
+            this.imgBox.TabIndex = 6;
+            this.imgBox.TabStop = false;
             // 
             // label3
             // 
@@ -123,12 +126,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha de nacimiento";
             // 
-            // dateTimePicker1
+            // txtDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(61, 166);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(346, 22);
-            this.dateTimePicker1.TabIndex = 2;
+            this.txtDate.Location = new System.Drawing.Point(61, 166);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(346, 22);
+            this.txtDate.TabIndex = 2;
             // 
             // label1
             // 
@@ -139,12 +142,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Nombre completo";
             // 
-            // textBox1
+            // textName
             // 
-            this.textBox1.Location = new System.Drawing.Point(61, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(348, 22);
-            this.textBox1.TabIndex = 0;
+            this.textName.Location = new System.Drawing.Point(61, 92);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(348, 22);
+            this.textName.TabIndex = 0;
             // 
             // directorySearcher1
             // 
@@ -162,7 +165,7 @@
             this.Text = "Movie";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,15 +174,15 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker txtDate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgBox;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textGender;
     }
 }
